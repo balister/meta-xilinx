@@ -12,10 +12,6 @@ ELF_SYMLINK ?= "u-boot${UBOOTXTENSION}.elf"
 do_deploy_append() {
 	install ${S}/${SRC_ELF} ${DEPLOYDIR}/${DEST_ELF}
 
-	if [ -e ${S}/BOOT.BIN ] ; then
-		install ${S}/BOOT.BIN ${DEPLOYDIR}/BOOT.BIN-${MACHINE}
-	fi
-
 	cd ${DEPLOYDIR}
 	rm -f ${SRC_ELF} ${ELF_SYMLINK}
 	ln -sf ${DEST_ELF} ${ELF_SYMLINK}
