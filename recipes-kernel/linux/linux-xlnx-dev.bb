@@ -16,7 +16,7 @@ LINUX_XLNX_NEARTOP_VERSION = "3.10"
 # of date. If that happens or if the developer desires a non meta-xilinx config 
 # they should add the defconfig and name it appropriately so the recipes find 
 # the file.
-LINUX_VERSION ?= "3.8"
+LINUX_VERSION ?= "3.14"
 
 LINUX_VERSION_EXTENSION ?= "-xilinx-dev"
 
