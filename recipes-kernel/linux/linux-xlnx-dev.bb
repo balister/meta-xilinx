@@ -9,7 +9,7 @@
 # should still function correctly with out of date values, but the naming will 
 # be missleading.
 LINUX_XLNX_NEARTOP_SRCREV = "669ee45083e22963d7fb7b774c5d7893ed35de2e"
-LINUX_XLNX_NEARTOP_VERSION = "3.10"
+LINUX_XLNX_NEARTOP_VERSION = "3.14"
 
 # LINUX_VERSION is set to select the defconfig and dts we wish to use within
 # meta-xilinx. If the build fails it may be because this defconfig is out 
