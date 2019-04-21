@@ -1,0 +1,25 @@
+From 5623e914e6a0b3f11d1cadb7a97b9d2f45fbb5a6 Mon Sep 17 00:00:00 2001
+From: Philip Balister <philip@opensdr.com>
+Date: Mon, 18 Feb 2019 14:56:24 -0500
+Subject: [PATCH 2/4] mini-zed: Update mini-zed dts so we can use it for SPL.
+
+Signed-off-by: Philip Balister <philip@opensdr.com>
+---
+ arch/arm/dts/zynq-minized.dts | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/arch/arm/dts/zynq-minized.dts b/arch/arm/dts/zynq-minized.dts
+index 525921ee7b..9ad7f090fe 100644
+--- a/arch/arm/dts/zynq-minized.dts
++++ b/arch/arm/dts/zynq-minized.dts
+@@ -38,6 +38,7 @@
+ };
+ 
+ &qspi {
++	u-boot,dm-pre-reloc;
+ 	status = "okay";
+ 	is-dual = <0>;
+ 	num-cs = <1>;
+-- 
+2.20.1
+
